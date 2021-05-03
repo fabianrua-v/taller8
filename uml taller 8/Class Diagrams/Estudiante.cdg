@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Estudiante">
+  <ClassDiagramComponents>
+    <Interface name="comparable" package="" visibility="public" xPosition="231.0" yPosition="109.0">
+      <Methods>
+        <Method name="compareTo" returnType="void" visibility="public"/>
+        <Method name="calcularEdad" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="Estudiante" package="" visibility="public" xPosition="212.0" yPosition="341.0">
+      <Fields>
+        <Field name="cc" type="long" visibility="private"/>
+        <Field name="edad" type="string" visibility="private"/>
+        <Field name="apellido" type="string" visibility="private"/>
+        <Field name="sexo" type="string" visibility="private"/>
+        <Field name="padron" type="string" visibility="private"/>
+        <Field name="condicion" type="string" visibility="private"/>
+        <Field name="nota" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="compareTo" returnType="void" visibility="public"/>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ordenar" package="" visibility="public" xPosition="414.0" yPosition="237.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="carcularNota" returnType="void" visibility="public"/>
+        <Method name="OrdenarPorNota" returnType="void" visibility="public"/>
+        <Method name="OrdenarPornotaMayor" returnType="void" visibility="public"/>
+        <Method name="OrdenarPorNombre" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Ordenar" target="comparable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Estudiante" target="comparable"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

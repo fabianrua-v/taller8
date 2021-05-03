@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Dvd">
+  <ClassDiagramComponents>
+    <Interface name="Comparable" package="" visibility="public" xPosition="230.0" yPosition="46.0">
+      <Methods>
+        <Method name="calcularPretamo" returnType="void" visibility="public"/>
+        <Method name="calcularPrestamo" returnType="void" visibility="public"/>
+        <Method name="mostrarIformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="Dvd" package="" visibility="public" xPosition="414.0" yPosition="290.0">
+      <Fields>
+        <Field name="codigo" type="long" visibility="private"/>
+        <Field name="titulo" type="string" visibility="private"/>
+        <Field name="autor" type="string" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cliente" package="" visibility="public" xPosition="204.0" yPosition="320.0">
+      <Fields>
+        <Field name="nombre" type="string" visibility="private"/>
+        <Field name="dni" type="long" visibility="private"/>
+        <Field name="Peticion" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CentroCultural" package="" visibility="public" xPosition="13.0" yPosition="290.0">
+      <Fields>
+        <Field name="cantidadDvd" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="CentroCultural" target="Comparable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Dvd" target="Comparable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Cliente" target="Comparable"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
